@@ -1,0 +1,29 @@
+.error-text {
+  position: relative;
+  font-size: 0.66rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: right;
+  margin-top: -10px;
+  padding-right: 25px;
+  color: hsl(0, 100%, 74%);
+
+  &:before {
+    position: absolute;
+    content: url("./../images/icon-error.svg");
+    top: -38px;
+    right: 45px;
+  }
+}
+
+.error-border {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

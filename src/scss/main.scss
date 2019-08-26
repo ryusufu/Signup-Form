@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import "reset";
+@import "errors";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("./../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  color: #fff;
+
+  @media only screen and (max-width: 1023px) {
+    background-image: url("./../images/bg-intro-mobile.png");
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  padding-right: 40px;
+  padding-bottom: 25px;
+
+  @media only screen and (max-width: 1023px) {
+    font-size: 1.66rem;
+    padding-top: 60px;
+    padding-right: 0px;
+  }
+}
+
+main.container {
+  display: flex;
+  min-height: 97vh;
+  padding: 50px;
+
+  @media only screen and (max-width: 1023px) {
+    display: block;
+    padding: 30px;
+  }
+}
+
+.section-one,
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+  padding: 55px;
+
+  @media only screen and (max-width: 1023px) {
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 40px;
+  }
+}
+
+.section-one {
+  p {
+    @media only screen and (max-width: 1023px) {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1200px;
+  color: hsl(246, 25%, 77%);
+
+  input,
+  button {
+    font-family: "Poppins", sans-serif;
+    margin: 10px 20px;
+    padding: 15px 20px;
+  }
+
+  .top-input {
+    margin-top: 25px;
+  }
+}
+
+input {
+  font-weight: 600;
+}
+
+button {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  box-shadow: inset 0px -3px 1px 0px rgba(0, 0, 0, 0.17);
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(154, 59%, 68%);
+  }
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+.info-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: hsl(248, 32%, 49%);
+
+  @media only screen and (max-width: 1023px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+input,
+button,
+.card {
+  border-radius: 7px;
+}
+
+.card {
+  box-shadow: 0px 7px 1px 0px rgba(0, 0, 0, 0.17);
+}
+
+.tos {
+  font-size: 0.75rem;
+  margin-bottom: 35px;
+}
+
+.important-text {
+  font-weight: 600;
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+}
